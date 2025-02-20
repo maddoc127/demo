@@ -28,9 +28,9 @@ public class Main_page_controler {
         return number * number;
     }
     @RequestMapping("/plus")
-    public int requestMethodName6(@RequestParam(value = "number", defaultValue = "0") int number,@RequestParam(value = "number2", defaultValue = "1") int number2) {
+    public int requestMethodName6(@RequestParam(value = "number", defaultValue = "0") int number,@RequestParam(value = "number2", defaultValue = "0") int number2) {
         return number + number2;
     }
-    //requestmapping içine nasıl 2 parametre koyucağmı bulamadım
+    
 }
 
