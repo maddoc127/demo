@@ -27,10 +27,6 @@ public class Main_page_controler {
     public int requestMethodName5(@RequestParam(value = "number", defaultValue = "0") int number) {
         return number * number;
     }
-    @RequestMapping("/plus")
-    public int requestMethodName6(@RequestParam(value = "number", defaultValue = "0") int number,@RequestParam(value = "number2", defaultValue = "0") int number2) {
-        return number + number2;
-    }
     
 }
 

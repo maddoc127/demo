@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Result Page</title>
+</head>
+
+<body>
+    <h2>Submitted Data</h2>
+    <p>First number: <span th:text="${submittedcalc.number1}"></span></p>
+    <p>Second number: <span th:text="${submittedcalc.number2}"></span></p>
+    <p>Selected operation: <span th:text="${submittedcalc.operation}"></span></p>
+    <a href="/calc_data">Go Back</a>
+</body>
+
+</html>
