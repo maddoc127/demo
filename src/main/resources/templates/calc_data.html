@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>Calculator</h2>
-    <form th:action="@{/submit}" th:object="${calc}" method="post">
+    <form th:action="@{/calcsubmit}" th:object="${calc}" method="post">
         <label>number1:</label>
         <input type="number" th:field="*{number1}" required /><br>
 

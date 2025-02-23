@@ -4,6 +4,7 @@ public class calc {
     private String operation;
     private int number1;
     private int number2;
+    private int sonuc;
 
     public calc() {
     }
@@ -37,5 +38,28 @@ public class calc {
 
     public void setNumber2(int number2) {
         this.number2 = number2;
+    }
+    public int getSonuc() {
+        return sonuc;
+    }
+
+    public void setSonuc(int sonuc) {
+        if(operation.equals("+")){
+            sonuc = number1 + number2;
+            this.sonuc = sonuc;
+        }
+        else if(operation == "-"){
+            sonuc = number1 - number2;
+            this.sonuc = sonuc;
+        }
+        else if(operation == "*"){
+            sonuc = number1 * number2;
+            this.sonuc = sonuc;
+        }
+        else if(operation == "/"){
+            sonuc = number1 / number2;
+            this.sonuc = sonuc;
+        }
+        
     }
 }
