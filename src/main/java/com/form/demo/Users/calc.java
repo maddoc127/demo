@@ -4,7 +4,7 @@ public class calc {
     private String operation;
     private int number1;
     private int number2;
-    private int sonuc;
+    private double sonuc;
 
     public calc() {
     }
@@ -39,25 +39,33 @@ public class calc {
     public void setNumber2(int number2) {
         this.number2 = number2;
     }
-    public int getSonuc() {
+    public double getSonuc() {
         return sonuc;
     }
 
-    public void setSonuc(int sonuc) {
+    public void setSonuc(double sonuc) {
         if(operation.equals("+")){
             sonuc = number1 + number2;
             this.sonuc = sonuc;
         }
-        else if(operation == "-"){
+        else if(operation.equals("-")){
             sonuc = number1 - number2;
             this.sonuc = sonuc;
         }
-        else if(operation == "*"){
+        else if(operation.equals("*")){
             sonuc = number1 * number2;
             this.sonuc = sonuc;
         }
-        else if(operation == "/"){
-            sonuc = number1 / number2;
+        else if(operation.equals("/")){
+            if(number2 == 0){
+                this.sonuc = sonuc;
+            }
+            else{
+            sonuc = (float) number1 / (float) number2;
+            this.sonuc = sonuc;
+        }
+        }
+        else{
             this.sonuc = sonuc;
         }
         

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Data Page</title>
+</head>
+<body>
+    <h2>Sorular</h2>
+    <form th.action="@{/sorusubmit}" th:object="${soru}" method="post">
+        
+        <label>soru1:</label>
+        <input type="text" th:field="*{cevap}" required /><br>
+
+    <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
