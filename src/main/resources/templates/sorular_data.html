@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>Sorular</h2>
-    <form th.action="@{/sorusubmit}" th:object="${soru}" method="post">
+    <form th:action="@{/sorusubmit}" th:object="${soru}" method="post">
         
         <label>soru1:</label>
         <input type="text" th:field="*{cevap}" required /><br>
