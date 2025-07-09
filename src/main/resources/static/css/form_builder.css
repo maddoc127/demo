@@ -1,0 +1,75 @@
+/* Navbar */
+.navbar {
+  background-color: #a2d2ff; /* pastel mavi */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Sayfa arka planı */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* açık mavi/gri pastel ton */
+}
+
+/* Form içeriği */
+.form-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Soru kutusu */
+.question-block {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input alanları */
+.question-block input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+/* Buton */
+#add-question-btn {
+  background-color: #a2d2ff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-question-btn:hover {
+  background-color: #90c8f0;
+}
+
+#submit-form-btn {
+  background-color: #00b894;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#submit-form-btn:hover {
+  background-color: #019875;
+}
