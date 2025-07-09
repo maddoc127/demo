@@ -1,0 +1,3 @@
+> form oluşturma main page olsun 
+
+> login / sign up amaçlı /login ve /signup sayfaları/ api endleri olsun 
